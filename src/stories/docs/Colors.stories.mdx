@@ -1,0 +1,45 @@
+import { Meta, ColorPalette } from '@storybook/addon-docs';
+import { lightColors } from './colors.ts';
+import { theme } from '@kauelima21/venus';
+
+<Meta title="Docs/Colors" />
+
+<style>
+  {`
+    .colors {
+      width: 100%;
+      padding: 2rem;
+    }
+
+    .colors div {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .colors div strong, span {
+      font-size: .875rem;
+    }
+
+    .light {
+      color: #FFFFFF;
+    }
+  `}
+</style>
+
+
+<ColorPallete>
+  {Object.entries(theme.colors).map(([key, value]) => {
+    let className = "colors light";
+    if (lightColors.includes(key)) {
+      className = "colors";
+    }
+    return (
+      <div key={key} className={className} style={{background: `${value.value}`}}>
+        <div>
+          <strong>${value.token}</strong>
+          <span>{value.value}</span>
+        </div>
+      </div>
+    )
+  })}
+</ColorPallete>
