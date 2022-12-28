@@ -13,8 +13,7 @@ export const parameters = {
   docs: { inlineStories: true },
   options: {
     storySort: {
-      method: "alphabetical",
-      order: ["Docs", ["Quick Start", "*"]],
+      order: ["Docs", ["Quick Start", "*"], "Form", "Surfaces", "Navigation"],
       locales: "en-US",
     },
   },

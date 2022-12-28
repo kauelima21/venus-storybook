@@ -3,7 +3,7 @@ import { componentWrapperDecorator, moduleMetadata } from '@storybook/angular';
 import { VenusCardComponent, VenusModule } from '@kauelima21/venus';
 
 export default {
-  title: 'Surfaces/Card/Card',
+  title: 'Surfaces/Card/CardHeader',
   component: VenusCardComponent,
   argTypes: {
     radius: {
@@ -37,7 +37,8 @@ export default {
 const Template: Story<VenusCardComponent> = (args: VenusCardComponent) => ({
   props: args,
   template: `
-    <venus-card [full]="full" [radius]="radius">
+      <venus-card [full]="full" [radius]="radius">
+      <venus-card-header title="Lorem ipsum"></venus-card-header>
       <venus-card-content>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. At sunt
@@ -51,8 +52,8 @@ const Template: Story<VenusCardComponent> = (args: VenusCardComponent) => ({
     </venus-card>`,
 });
 
-export const Card = Template.bind({});
-Card.args = {
+export const CardHeader = Template.bind({});
+CardHeader.args = {
   full: false,
   radius: 'sm',
 };

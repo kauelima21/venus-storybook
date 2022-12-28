@@ -32,12 +32,7 @@ export default {
     componentWrapperDecorator((story) => {
       return `
         <css-reset>
-          <div style='
-            height: calc(100vh - 40px);
-            width: calc(100vw - 40px);
-          '>
-            ${story}
-          </div>
+          ${story}
         </css-reset>
       `;
     }),
