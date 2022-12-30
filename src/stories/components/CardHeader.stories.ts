@@ -7,7 +7,7 @@ export default {
   component: VenusCardComponent,
   argTypes: {
     radius: {
-      options: ['sm', 'md', 'lg'],
+      options: ['sm', 'md', 'lg', 'xl'],
       control: {
         type: 'inline-radio',
       },

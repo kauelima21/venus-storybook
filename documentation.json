@@ -181,7 +181,7 @@
                 "name": "CardHeader",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/components/Card.stories.ts",
+                "file": "src/stories/components/CardHeader.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -216,6 +216,16 @@
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Icon",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<VenusButtonComponent>",
+                "defaultValue": "(\r\n  args: VenusButtonComponent\r\n) => ({\r\n  props: args,\r\n  template: `\r\n    <venus-button\r\n      [bg]=\"bg\"\r\n      [full]=\"full\"\r\n      [isDisabled]=\"isDisabled\"\r\n      [type]=\"type\"\r\n      [size]=\"size\"\r\n    >\r\n      <venus-icon name=\"info\" color=\"light\" size=\"sm\"></venus-icon>\r\n      <span>Label</span>\r\n    </venus-button>`,\r\n})"
             },
             {
                 "name": "lightColors",
@@ -286,6 +296,16 @@
                 "deprecationMessage": "",
                 "type": "Story<VenusCardComponent>",
                 "defaultValue": "(args: VenusCardComponent) => ({\r\n  props: args,\r\n  template: `\r\n    <venus-card [full]=\"full\" [radius]=\"radius\">\r\n      <venus-card-content>\r\n        <p>\r\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. At sunt\r\n          incidunt accusantium dolorem quod nesciunt facere, sequi\r\n          consectetur assumenda laboriosam libero quidem sint ipsum, fugit\r\n          culpa, minus facilis vitae voluptatem expedita soluta autem\r\n          labore. Ullam quos, recusandae facilis similique assumenda eum\r\n          adipisci alias, incidunt rem veritatis quasi!\r\n        </p>\r\n      </venus-card-content>\r\n    </venus-card>`,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/CardHeader.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<VenusCardComponent>",
+                "defaultValue": "(args: VenusCardComponent) => ({\r\n  props: args,\r\n  template: `\r\n      <venus-card [full]=\"full\" [radius]=\"radius\">\r\n      <venus-card-header title=\"Lorem ipsum\"></venus-card-header>\r\n      <venus-card-content>\r\n        <p>\r\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. At sunt\r\n          incidunt accusantium dolorem quod nesciunt facere, sequi\r\n          consectetur assumenda laboriosam libero quidem sint ipsum, fugit\r\n          culpa, minus facilis vitae voluptatem expedita soluta autem\r\n          labore. Ullam quos, recusandae facilis similique assumenda eum\r\n          adipisci alias, incidunt rem veritatis quasi!\r\n        </p>\r\n      </venus-card-content>\r\n    </venus-card>`,\r\n})"
             },
             {
                 "name": "Template",
@@ -378,10 +398,22 @@
                     "defaultValue": "Template.bind({})"
                 },
                 {
-                    "name": "CardHeader",
+                    "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/stories/components/Card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<VenusCardComponent>",
+                    "defaultValue": "(args: VenusCardComponent) => ({\r\n  props: args,\r\n  template: `\r\n    <venus-card [full]=\"full\" [radius]=\"radius\">\r\n      <venus-card-content>\r\n        <p>\r\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. At sunt\r\n          incidunt accusantium dolorem quod nesciunt facere, sequi\r\n          consectetur assumenda laboriosam libero quidem sint ipsum, fugit\r\n          culpa, minus facilis vitae voluptatem expedita soluta autem\r\n          labore. Ullam quos, recusandae facilis similique assumenda eum\r\n          adipisci alias, incidunt rem veritatis quasi!\r\n        </p>\r\n      </venus-card-content>\r\n    </venus-card>`,\r\n})"
+                }
+            ],
+            "src/stories/components/CardHeader.stories.ts": [
+                {
+                    "name": "CardHeader",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/CardHeader.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -391,11 +423,11 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/components/Card.stories.ts",
+                    "file": "src/stories/components/CardHeader.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<VenusCardComponent>",
-                    "defaultValue": "(args: VenusCardComponent) => ({\r\n  props: args,\r\n  template: `\r\n    <venus-card [full]=\"full\" [radius]=\"radius\">\r\n      <venus-card-content>\r\n        <p>\r\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. At sunt\r\n          incidunt accusantium dolorem quod nesciunt facere, sequi\r\n          consectetur assumenda laboriosam libero quidem sint ipsum, fugit\r\n          culpa, minus facilis vitae voluptatem expedita soluta autem\r\n          labore. Ullam quos, recusandae facilis similique assumenda eum\r\n          adipisci alias, incidunt rem veritatis quasi!\r\n        </p>\r\n      </venus-card-content>\r\n    </venus-card>`,\r\n})"
+                    "defaultValue": "(args: VenusCardComponent) => ({\r\n  props: args,\r\n  template: `\r\n      <venus-card [full]=\"full\" [radius]=\"radius\">\r\n      <venus-card-header title=\"Lorem ipsum\"></venus-card-header>\r\n      <venus-card-content>\r\n        <p>\r\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. At sunt\r\n          incidunt accusantium dolorem quod nesciunt facere, sequi\r\n          consectetur assumenda laboriosam libero quidem sint ipsum, fugit\r\n          culpa, minus facilis vitae voluptatem expedita soluta autem\r\n          labore. Ullam quos, recusandae facilis similique assumenda eum\r\n          adipisci alias, incidunt rem veritatis quasi!\r\n        </p>\r\n      </venus-card-content>\r\n    </venus-card>`,\r\n})"
                 }
             ],
             "src/stories/components/Button.stories.ts": [
@@ -418,6 +450,16 @@
                     "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Icon",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<VenusButtonComponent>",
+                    "defaultValue": "(\r\n  args: VenusButtonComponent\r\n) => ({\r\n  props: args,\r\n  template: `\r\n    <venus-button\r\n      [bg]=\"bg\"\r\n      [full]=\"full\"\r\n      [isDisabled]=\"isDisabled\"\r\n      [type]=\"type\"\r\n      [size]=\"size\"\r\n    >\r\n      <venus-icon name=\"info\" color=\"light\" size=\"sm\"></venus-icon>\r\n      <span>Label</span>\r\n    </venus-button>`,\r\n})"
                 },
                 {
                     "name": "Primary",
@@ -564,6 +606,16 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
+                "name": "Icon",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/components/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
                 "name": "Primary",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
@@ -624,13 +676,23 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/components/CardHeader.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
                 "name": "CardHeader",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
             },
             {
-                "filePath": "src/stories/components/Card.stories.ts",
+                "filePath": "src/stories/components/CardHeader.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
