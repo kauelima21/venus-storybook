@@ -218,16 +218,6 @@
                 "defaultValue": "Template.bind({})"
             },
             {
-                "name": "Icon",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/components/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<VenusButtonComponent>",
-                "defaultValue": "(\r\n  args: VenusButtonComponent\r\n) => ({\r\n  props: args,\r\n  template: `\r\n    <venus-button\r\n      [bg]=\"bg\"\r\n      [full]=\"full\"\r\n      [isDisabled]=\"isDisabled\"\r\n      [type]=\"type\"\r\n      [size]=\"size\"\r\n    >\r\n      <venus-icon name=\"info\" color=\"light\" size=\"sm\"></venus-icon>\r\n      <span>Label</span>\r\n    </venus-button>`,\r\n})"
-            },
-            {
                 "name": "lightColors",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -235,7 +225,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
-                "defaultValue": "[\r\n  'secondaryLow',\r\n  'secondaryLight',\r\n  'background',\r\n  'white',\r\n  'warning',\r\n  'warningHover',\r\n  'gray',\r\n]"
+                "defaultValue": "[\r\n  'primaryLow',\r\n  'secondaryLow',\r\n  'secondaryLight',\r\n  'background',\r\n  'white',\r\n  'warning',\r\n  'warningHover',\r\n  'gray',\r\n]"
             },
             {
                 "name": "Primary",
@@ -281,21 +271,21 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/components/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<VenusButtonComponent>",
-                "defaultValue": "(args: VenusButtonComponent) => ({\r\n  props: args,\r\n  template: `\r\n    <venus-button\r\n      [bg]=\"bg\"\r\n      [full]=\"full\"\r\n      [isDisabled]=\"isDisabled\"\r\n      [type]=\"type\"\r\n      [size]=\"size\"\r\n    >Label</venus-button>`,\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/components/Card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<VenusCardComponent>",
                 "defaultValue": "(args: VenusCardComponent) => ({\r\n  props: args,\r\n  template: `\r\n    <venus-card [full]=\"full\" [radius]=\"radius\">\r\n      <venus-card-content>\r\n        <p>\r\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. At sunt\r\n          incidunt accusantium dolorem quod nesciunt facere, sequi\r\n          consectetur assumenda laboriosam libero quidem sint ipsum, fugit\r\n          culpa, minus facilis vitae voluptatem expedita soluta autem\r\n          labore. Ullam quos, recusandae facilis similique assumenda eum\r\n          adipisci alias, incidunt rem veritatis quasi!\r\n        </p>\r\n      </venus-card-content>\r\n    </venus-card>`,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<VenusButtonComponent>",
+                "defaultValue": "(args: VenusButtonComponent) => ({\r\n  props: args,\r\n  template: `\r\n    <venus-button\r\n      [bg]=\"bg\"\r\n      [full]=\"full\"\r\n      [isDisabled]=\"isDisabled\"\r\n      [type]=\"type\"\r\n      [size]=\"size\"\r\n    >Label</venus-button>`,\r\n})"
             },
             {
                 "name": "Template",
@@ -316,6 +306,16 @@
                 "deprecationMessage": "",
                 "type": "Story<VenusInputComponent>",
                 "defaultValue": "(args: VenusInputComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Tooltip",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/components/Tooltip.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "() => ({\r\n  template: `\r\n  <venus-tooltip [tip]=\"tip\">\r\n    <p>Hover me</p>\r\n  </venus-tooltip>`,\r\n  props: {\r\n    tip: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',\r\n  },\r\n})"
             },
             {
                 "name": "Warning",
@@ -452,16 +452,6 @@
                     "defaultValue": "Template.bind({})"
                 },
                 {
-                    "name": "Icon",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/components/Button.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story<VenusButtonComponent>",
-                    "defaultValue": "(\r\n  args: VenusButtonComponent\r\n) => ({\r\n  props: args,\r\n  template: `\r\n    <venus-button\r\n      [bg]=\"bg\"\r\n      [full]=\"full\"\r\n      [isDisabled]=\"isDisabled\"\r\n      [type]=\"type\"\r\n      [size]=\"size\"\r\n    >\r\n      <venus-icon name=\"info\" color=\"light\" size=\"sm\"></venus-icon>\r\n      <span>Label</span>\r\n    </venus-button>`,\r\n})"
-                },
-                {
                     "name": "Primary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
@@ -521,7 +511,19 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "[]",
-                    "defaultValue": "[\r\n  'secondaryLow',\r\n  'secondaryLight',\r\n  'background',\r\n  'white',\r\n  'warning',\r\n  'warningHover',\r\n  'gray',\r\n]"
+                    "defaultValue": "[\r\n  'primaryLow',\r\n  'secondaryLow',\r\n  'secondaryLight',\r\n  'background',\r\n  'white',\r\n  'warning',\r\n  'warningHover',\r\n  'gray',\r\n]"
+                }
+            ],
+            "src/stories/components/Tooltip.stories.ts": [
+                {
+                    "name": "Tooltip",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/components/Tooltip.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "() => ({\r\n  template: `\r\n  <venus-tooltip [tip]=\"tip\">\r\n    <p>Hover me</p>\r\n  </venus-tooltip>`,\r\n  props: {\r\n    tip: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',\r\n  },\r\n})"
                 }
             ]
         },
@@ -597,16 +599,6 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Full",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/components/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Icon",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -727,6 +719,16 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/components/Tooltip.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Tooltip",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
