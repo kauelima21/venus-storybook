@@ -110,13 +110,13 @@
         },
         {
             "name": "AppRoutingModule",
-            "id": "module-AppRoutingModule-955c573c35cec67f4a414da0839f0a3172bbd2a2c92541668a4734abe25da3ddcdfb3af4120c85f54e85958975a50fc03720aa8a77117c4c23de697928b6b186",
+            "id": "module-AppRoutingModule-83be83f264e0854d119381a7949e59e6189d655873aeae60836bc5feedfe7b9c06ac05ad1d1ff96262ff1ad8e6c003dfbdfa3c29ebfb4049e96bedb5951b6c42",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app-routing.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\n\nconst routes: Routes = [\n  {\n    path: '',\n    redirectTo: '',\n  },\n];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule],\n})\nexport class AppRoutingModule {}\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\n\nconst routes: Routes = [\n  {\n    path: '',\n    pathMatch: 'full',\n    redirectTo: '',\n  },\n];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule],\n})\nexport class AppRoutingModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -261,6 +261,16 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/components/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<VenusButtonComponent>",
+                "defaultValue": "(args: VenusButtonComponent) => ({\r\n  props: args,\r\n  template: `\r\n    <venus-button\r\n      [bg]=\"bg\"\r\n      [full]=\"full\"\r\n      [isDisabled]=\"isDisabled\"\r\n      [type]=\"type\"\r\n      [size]=\"size\"\r\n    >Label</venus-button>`,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/components/Breadcrumb.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -276,16 +286,6 @@
                 "deprecationMessage": "",
                 "type": "Story<VenusCardComponent>",
                 "defaultValue": "(args: VenusCardComponent) => ({\r\n  props: args,\r\n  template: `\r\n    <venus-card [full]=\"full\" [radius]=\"radius\">\r\n      <venus-card-content>\r\n        <p>\r\n          Lorem ipsum dolor sit amet consectetur adipisicing elit. At sunt\r\n          incidunt accusantium dolorem quod nesciunt facere, sequi\r\n          consectetur assumenda laboriosam libero quidem sint ipsum, fugit\r\n          culpa, minus facilis vitae voluptatem expedita soluta autem\r\n          labore. Ullam quos, recusandae facilis similique assumenda eum\r\n          adipisci alias, incidunt rem veritatis quasi!\r\n        </p>\r\n      </venus-card-content>\r\n    </venus-card>`,\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/components/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<VenusButtonComponent>",
-                "defaultValue": "(args: VenusButtonComponent) => ({\r\n  props: args,\r\n  template: `\r\n    <venus-button\r\n      [bg]=\"bg\"\r\n      [full]=\"full\"\r\n      [isDisabled]=\"isDisabled\"\r\n      [type]=\"type\"\r\n      [size]=\"size\"\r\n    >Label</venus-button>`,\r\n})"
             },
             {
                 "name": "Template",
@@ -543,6 +543,7 @@
                 "children": [
                     {
                         "path": "",
+                        "pathMatch": "full",
                         "redirectTo": ""
                     }
                 ],
